@@ -1,0 +1,23 @@
+### Listar categorias
+GET http://localhost:8080/api/categories
+
+### Criar categoria
+POST http://localhost:8080/api/categories
+Content-Type: application/json
+
+{
+  "nome": "Eletrônicos"
+}
+
+### Listar itens
+GET http://localhost:8080/api/items
+
+### Criar item
+POST http://localhost:8080/api/items
+Content-Type: application/json
+
+{
+  "nome": "Notebook",
+  "preco": 3500.00,
+  "categoriaId": 1
+}
