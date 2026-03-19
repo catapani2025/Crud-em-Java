@@ -1,39 +1,33 @@
-Back-end — Spring Boot + Java
-🎯 Missão
-Criar as APIs REST para gerenciar Categorias e Itens de inventário.
+<h1 align="center">
+  📦 Inventário API
+</h1>
 
-Basea-se no design https://inventario-mea3kquj.manus.space/items
+<p align="center">
+  <strong>Back-end para gerenciamento de categorias e itens de inventário</strong>
+  <br>
+  Desenvolvido com Spring Boot e Java 21+, seguindo boas práticas REST e validações.
+</p>
 
-APIs de Categorias
-POST /api/categories - Criar categoria
-GET /api/categories - Listar todas
-GET /api/categories/{id} - Buscar por ID
-PUT /api/categories/{id} - Atualizar
-DELETE /api/categories/{id} - Deletar
-APIs de Itens
-POST /api/items - Criar item (categoriaId obrigatório)
-GET /api/items - Listar todos
-GET /api/items/{id} - Buscar por ID
-PUT /api/items/{id} - Atualizar
-DELETE /api/items/{id} - Deletar
-GET /api/items?categoriaId={id} - Filtrar por categoria
-✅ Requisitos Importantes
-Item sem categoria deve retornar erro 400
-Categoria inexistente deve retornar erro 400
-Códigos HTTP corretos (200, 201, 204, 400, 404)
-Validações de campos obrigatórios
-Tratamento ao deletar categoria com itens vinculados
-🔧 Stack Técnica
-Java 21+
-Spring Boot
-PostgreSQL
-Maven ou Gradle
-📦 Entrega
-Fork este repositório
-Implemente as APIs
-Envie o link do seu repo
-📊 Relacionamento dos Dados
-1 Categoria → N Itens
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-21%2B-blue?logo=java" alt="Java">
+  <img src="https://img.shields.io/badge/Spring%20Boot-3.2-green?logo=springboot" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/PostgreSQL-16-blue?logo=postgresql" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Maven-3.9-red?logo=apache-maven" alt="Maven">
+  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
+</p>
 
-Uma categoria pode ter vários itens
+---
+
+## ✨ Funcionalidades
+
+- **Categorias** – Criação, listagem, busca, atualização e remoção de categorias.
+- **Itens** – Criação, listagem, busca, atualização e remoção de itens, com vínculo obrigatório a uma categoria.
+- **Filtro por categoria** – Listar itens de uma categoria específica.
+- **Validações** – Campos obrigatórios, categoria existente, erro ao vincular item a categoria inexistente.
+- **Tratamento de erros** – Retorno de códigos HTTP adequados (200, 201, 204, 400, 404).
+
+---
+
+## 🧱 Modelo de Dados
+
 Um item pertence a apenas uma categoria (obrigatório)
