@@ -72,19 +72,3 @@ Um item pertence a apenas uma categoria (obrigatório)
 - **Lombok** – Redução de código boilerplate.
 
 
----
-
-## ⚙️ Como Executar
-
-### Pré-requisitos
-
-- JDK 21+
-- PostgreSQL (ou Docker com imagem do PostgreSQL)
-- Maven 3.9+
-
-### Passos
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/inventario-api.git
-   cd inventario-api
