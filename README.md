@@ -31,3 +31,60 @@
 ## 🧱 Modelo de Dados
 
 Um item pertence a apenas uma categoria (obrigatório)
+
+- Uma **Categoria** pode ter vários **Itens**.
+- Um **Item** pertence a uma única **Categoria**.
+
+---
+
+## 📋 Endpoints da API
+
+### Categorias
+
+| Método | URL                          | Descrição                         |
+|--------|------------------------------|-----------------------------------|
+| POST   | `/api/categories`            | Cria uma nova categoria           |
+| GET    | `/api/categories`            | Lista todas as categorias         |
+| GET    | `/api/categories/{id}`       | Retorna os dados de uma categoria |
+| PUT    | `/api/categories/{id}`       | Atualiza uma categoria existente  |
+| DELETE | `/api/categories/{id}`       | Remove uma categoria (se vazia)   |
+
+### Itens
+
+| Método | URL                          | Descrição                              |
+|--------|------------------------------|----------------------------------------|
+| POST   | `/api/items`                 | Cria um novo item (categoriaId obrig.) |
+| GET    | `/api/items`                 | Lista todos os itens                   |
+| GET    | `/api/items/{id}`            | Retorna os dados de um item            |
+| PUT    | `/api/items/{id}`            | Atualiza um item existente             |
+| DELETE | `/api/items/{id}`            | Remove um item                         |
+| GET    | `/api/items?categoriaId={id}`| Lista itens de uma categoria específica|
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **Java 21** – LTS mais recente com recursos modernos.
+- **Spring Boot 3** – Framework para criação de APIs robustas.
+- **Spring Data JPA** – Abstração para persistência.
+- **PostgreSQL** – Banco de dados relacional.
+- **Maven** – Gerenciamento de dependências e build.
+- **Lombok** – Redução de código boilerplate.
+- **Bean Validation** – Validações declarativas.
+
+---
+
+## ⚙️ Como Executar
+
+### Pré-requisitos
+
+- JDK 21+
+- PostgreSQL (ou Docker com imagem do PostgreSQL)
+- Maven 3.9+
+
+### Passos
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/inventario-api.git
+   cd inventario-api
