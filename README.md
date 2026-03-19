@@ -70,7 +70,7 @@ Um item pertence a apenas uma categoria (obrigatório)
 - **PostgreSQL** – Banco de dados relacional.
 - **Maven** – Gerenciamento de dependências e build.
 - **Lombok** – Redução de código boilerplate.
-- **Bean Validation** – Validações declarativas.
+
 
 ---
 
